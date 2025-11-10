@@ -19,7 +19,4 @@
 ---
 
 ### About Us
-Quantome turns messy data into production-ready, high-performance data assets. Data refinement and annotation services empower your AI and end vendor lock-in.
-
-### Our Open-Source Work
-Explore our open-source repositories below...
+Quantome helps you turn messy data into production-ready, high-performance data assets. Data refinement and annotation services empower your AI and end vendor lock-in.

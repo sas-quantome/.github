@@ -7,7 +7,7 @@
 ---
 
 <h3 align="center">
-  Engineering Knowledge From Complex Data
+  Making Datasets Relevant
 </h3>
 
 <p align="center">Quantome helps you turn messy data into production-ready, high-performance data assets. Data refinement and annotation services empower your AI and end vendor lock-in.</p>

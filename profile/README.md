@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://www.sas-quantome.com/assets/logo.png" alt="Quantome Logo" width="150">
+  <img src="logo.png" alt="Quantome Logo" width="150">
 </p>
 
 <h1 align="center">Quantome SAS</h1>

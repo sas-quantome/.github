@@ -10,6 +10,12 @@
   Turning noisy data into structured assets.
 </h3>
 
-<p align="center">Quantome helps you turn messy data into production-ready, high-performance data assets. Data refinement and annotation services empower your AI and end vendor lock-in.</p>
+
+<div align="center">
+
+![go-interlace](go-interlace.png)
+
+</div>
+
 
 ---

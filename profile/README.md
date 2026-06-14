@@ -1,4 +1,4 @@
-###### June 14, 2026: Quantome SAS readme v2
+###### June 14, 2026: Quantome SAS readme v3
 
 ***
 
@@ -14,7 +14,7 @@ Every organization has valuable data sitting idle—data on hold. Whether it is 
 2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices.
 3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow.
 
-Quantome resolves this bottleneck with **Interlace** a lightweight, zero-dependency Go engine that runs anywhere, converting unstructured files into song-sized, structured binary assets.
+Quantome resolves this bottleneck with **Interlace,** a lightweight, zero-dependency Go engine that runs anywhere, converting unstructured files into song-sized, structured binary assets.
 
 ### Interlace Capabilities
 

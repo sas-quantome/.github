@@ -2,6 +2,12 @@
 
 ***
 
+<div align="center">
+
+![go-interlace](go-interlace.png)
+
+</div>
+
 # Quantome SAS
 
 Eliminate data processing friction by transforming raw, massive text files into highly compressed, schemaless, parallel-array Gob data assets. Quantome establishes your permanent **primary storage layer**—making our high-density formats your ultra-condensed source of truth. 

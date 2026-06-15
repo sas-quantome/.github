@@ -1,4 +1,4 @@
-###### June 14, 2026: Quantome SAS readme v8
+###### June 14, 2026: Quantome SAS readme v12
 
 <div align="center">
 

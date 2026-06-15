@@ -1,4 +1,4 @@
-###### June 14, 2026: Quantome SAS readme v7
+###### June 14, 2026: Quantome SAS readme v8
 
 <div align="center">
 
@@ -47,9 +47,9 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 * **Hallucination-Free Retrieval**: Verified facts and relationships, ensuring output accuracy, are accessible for agents to retrieve directly from local parallel Gob arrays.
 * **Local Tooling for Autonomous Agents**: Because Gob arrays load instantly, you can wrap them in local Go APIs to expose them directly to agents as fast, lightweight tools.
 
-### Our Open-Core Ecosystem
+### Our Open-Core System
 
 * **`co-interlace`**: The official open-source client integration kit. High-performance shell tools and Go structural schemas to decode, search, and pipe your refined Gob primary data streams into secondary infrastructure.
 * **`interlace-ex`**: Our 311 MB public playground dataset. Download it from our repository releases to experience 29X byte compression and raw terminal query speeds firsthand.
 
-*Ready to turn your idle data into an ultra-condensed source of truth? Visit [Quantome SAS](https://link-to-your-website) for our full-service Data Refinery.*
+*Ready to turn your idle data into an ultra-condensed source of truth? Visit [Quantome SAS](https://www.sas-quantome.com) for our full-service Data Refinery.*

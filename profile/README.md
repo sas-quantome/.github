@@ -1,4 +1,4 @@
-# Quantome SAS
+# Quantome, SAS.
 
 Eliminate data processing friction by transforming raw, massive text files into highly compressed, schemaless, parallel-array Gob data assets. Quantome establishes your permanent **primary storage layer**—making our high-density formats your ultra-condensed source of truth. 
 
@@ -65,4 +65,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v24
+###### June 16, 2026: Quantome SAS readme v25

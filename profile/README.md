@@ -29,7 +29,7 @@ Interlace saves I/O and memory by splitting data into columnar, parallel, Gzip-c
 
 #### 2) Fierce Byte Condensation 
 Interlace achieves massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies.
-* **Up to 29X Compression**: In our interlace-ex benchmark, 9.1 GB of raw data is compressed to 311 MB of refined Gob-compressed assets.
+* **Up to 29X Compression**: In our interlace-ex benchmark, 9.1 GB of compressed raw data (57 GB uncompressed) is distilled to 311 MB of refined Gob-compressed assets.
 
 #### 3) Deterministic Pipeline Orchestration
 Advanced workflows shouldn't rely on manual scheduling or unpredictable software.
@@ -58,4 +58,4 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v14
+###### June 16, 2026: Quantome SAS readme v15

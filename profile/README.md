@@ -29,13 +29,27 @@ Interlace saves I/O and memory by splitting data into columnar, parallel, Gzip-c
 
 #### 2) Fierce Byte Condensation 
 Interlace achieves massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies.
-* **Up to 29X Compression**: In our interlace-ex benchmark, 9.1 GB of compressed raw data (57 GB uncompressed) is distilled to 311 MB of refined Gob-compressed assets.
+* **Up to 29X Compression**: In our **`interlace-ex`** benchmark, 9.1 GB of compressed raw data (57 GB uncompressed) is distilled to 311 MB of refined Gob-compressed assets.
 
 #### 3) Deterministic Pipeline Orchestration
 Advanced workflows shouldn't rely on manual scheduling or unpredictable software.
 * **Deterministic Regulation Loop**: Quantome handles jobs using Interlace's Directed Acyclic Graphs (DAGs) and Standard Operating Procedures (SOPs).
 * **Platform Agnostic**: Interlace runs jobs in parallel in local machines, Slurm, or PBS high-performance computing clusters, e.g., supercomputers.
 * **Safe Supervision**: Interlace’s deterministic agent persistently monitors processes, parses execution logs, handles errors, prevents redundant runs, and, upon detecting a critical failure, alerts the pipeline to stop submitting further jobs.
+
+#### 4) Lightning-Fast Data Refinement Workflow Engine
+The following figures show the performance of our benchmark workflow designed to create the **`interlace-ex`** data stack: 
+* **Processed input data, uncompressed:** 61,984,935,936 bytes
+* **Downloaded compressed data, disk usage:** 9,067,302,871 bytes
+* **Refined compressed Gob data, disk usage:** 311,427,072 bytes
+* **Gob encoded data tuples:** 54,296,317
+* **Volume reduction:** 29X
+* **Storage ratio:** 5.9 data tuples per byte
+* **Processing time:** 5 minutes and 24 seconds
+* **CPU Limit:** 4
+* **Machine:** MacBook Pro M1
+* **Number of warnings:** 0
+* **Number of errors:** 0
 
 ### Data Refinement
 
@@ -65,4 +79,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v27
+###### June 16, 2026: Quantome SAS readme v28

@@ -10,7 +10,7 @@ Eliminate data processing friction by transforming raw, massive text files into 
 
 Whether you are working with complex biological datasets, massive system logs, or business catalogs, Quantome’s **Interlace** architecture empowers your IT teams to stream validated data natively into LLMs, search engines, or warehouses. This allows you to treat massive cloud vendor platforms as disposable secondary indexes with absolutely zero vendor lock-in.
 
-### Data on Hold .ᐟ
+### Data on Hold.ᐟ
 
 Every organization has valuable data sitting idle—data on hold. Whether it is sequencing files in a genetics lab, historical logs in an enterprise stack, or content databases waiting to be cataloged, data stays unused because:
 
@@ -59,4 +59,4 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v18
+###### June 16, 2026: Quantome SAS readme v19

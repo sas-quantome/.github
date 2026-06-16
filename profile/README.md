@@ -52,7 +52,7 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 ### A View From The Inside
 
-Find out why Go is our core language, what the complexity of storing multi-omics datasets is, and how a human pathogenicity discovery platform comprising trillions of genetic variants was structured.
+Find out why Go is our core language, what the complexity of storing multi-omics datasets is, and how a human pathogenicity discovery platform worth trillions of genetic variants is capable of retrieving any DNA mismatch in the human genome.
 
 [![IMAGE ALT TEXT HERE](inside_interlace.jpg)](http://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE)
 
@@ -65,4 +65,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v25
+###### June 16, 2026: Quantome SAS readme v27

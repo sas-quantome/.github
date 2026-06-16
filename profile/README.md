@@ -50,7 +50,8 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 * **`co-interlace`**: The official open-source client integration kit. High-performance shell tools and Go structural schemas to decode, search, and pipe your refined Gob primary data streams into secondary infrastructure.
 * **`interlace-ex`**: Our 311 MB public playground dataset. Download it from our repository releases to experience 29X byte compression and raw terminal query speeds firsthand.
 
-### ★ Ready to turn your idle data into an ultra-condensed source of truth? Visit [Quantome SAS](https://www.sas-quantome.com) for our full-service Data Refinery.
+### ★ Ready to turn your idle data into an ultra-condensed source of truth? 
+### ➜ Visit [Quantome SAS](https://www.sas-quantome.com) for our full-service Data Refinery.
 
 <div align="center">
 
@@ -58,4 +59,4 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v16
+###### June 16, 2026: Quantome SAS readme v17

@@ -1,14 +1,12 @@
-###### June 14, 2026: Quantome SAS readme v12
+# Quantome SAS
+
+Eliminate data processing friction by transforming raw, massive text files into highly compressed, schemaless, parallel-array Gob data assets. Quantome establishes your permanent **primary storage layer**—making our high-density formats your ultra-condensed source of truth. 
 
 <div align="center">
 
 ![go-interlace](go-interlace.png)
 
 </div>
-
-# Quantome SAS
-
-Eliminate data processing friction by transforming raw, massive text files into highly compressed, schemaless, parallel-array Gob data assets. Quantome establishes your permanent **primary storage layer**—making our high-density formats your ultra-condensed source of truth. 
 
 Whether you are working with complex biological datasets, massive system logs, or business catalogs, Quantome’s **Interlace** architecture empowers your IT teams to stream validated data natively into LLMs, search engines, or warehouses. This allows you to treat massive cloud vendor platforms as disposable secondary indexes with absolutely zero vendor lock-in.
 
@@ -58,4 +56,6 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 </div>
 
-*Ready to turn your idle data into an ultra-condensed source of truth? Visit [Quantome SAS](https://www.sas-quantome.com) for our full-service Data Refinery.*
+### Ready to turn your idle data into an ultra-condensed source of truth? Visit [Quantome SAS](https://www.sas-quantome.com) for our full-service Data Refinery.
+
+###### June 16, 2026: Quantome SAS readme v13

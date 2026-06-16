@@ -14,7 +14,7 @@ Whether you are working with complex biological datasets, massive system logs, o
 
 Every organization has valuable data sitting idle—data on hold. Whether it is sequencing files in a genetics lab, historical logs in an enterprise stack, or content databases waiting to be cataloged, data stays unused because:
 
-1. **Infrastructure Overload**: Setting up databases and maintaining rigid SQL schemas is heavy, slow, and requires constant migration overhead.
+1. **Infrastructure Overload**: Setting up databases and maintaining rigid SQL schemas is heavy and slow, and it requires constant migration overhead; or, more likely, there is simply no availability to accomplish the job.
 2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices.
 3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow.
 
@@ -59,4 +59,4 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v19
+###### June 16, 2026: Quantome SAS readme v20

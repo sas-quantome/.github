@@ -34,7 +34,7 @@ Interlace achieves massive space savings with FNV-1a 64-bit hashing for text cat
 #### 3) Deterministic Pipeline Orchestration
 Advanced workflows shouldn't rely on manual scheduling or unpredictable software.
 * **Deterministic Regulation Loop**: Quantome handles jobs using Interlace's Directed Acyclic Graphs (DAGs) and Standard Operating Procedures (SOPs).
-* **Platform Agnostic**: Interlace runs jobs in parallel in local machines, Slurm, or PBS high-performance computing clusters.
+* **Platform Agnostic**: Interlace runs jobs in parallel in local machines, Slurm, or PBS high-performance computing clusters, e.g., supercomputers.
 * **Safe Supervision**: Interlace’s deterministic agent persistently monitors processes, parses execution logs, handles errors, prevents redundant runs, and, upon detecting a critical failure, alerts the pipeline to stop submitting further jobs.
 
 ### Data Refinement
@@ -59,4 +59,4 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v20
+###### June 16, 2026: Quantome SAS readme v21

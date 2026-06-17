@@ -16,7 +16,7 @@ Every organization has valuable data sitting idle—data on hold. Whether it is 
 
 1. **Infrastructure Overload**: Setting up databases and maintaining rigid SQL schemas is heavy and slow, and it requires constant migration overhead; or, more likely, there is simply no availability to accomplish the job.
 2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices.
-3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow.
+3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow. 
 
 Quantome resolves this bottleneck with **Interlace,** a lightweight, zero-dependency Go engine that runs anywhere and converts  unstructured files into song-sized, structured binary assets.
 
@@ -59,6 +59,8 @@ The following figures show the performance of our benchmark workflow designed to
 * **Processing time:** 5 minutes and 24 seconds
 
 ### Data Refinement
+
+*Because LLM agents are probabilistic and LLMs act before knowing the consequences, this puts you at risk.*
 
 To build reliable AI applications, LLMs need refined data, human-in-the-loop surveillance, and governance. Quantome helps you bridge the gap between probabilistic AI agents and deterministic data:
 

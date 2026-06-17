@@ -68,7 +68,7 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 ### Refinement Workflow Example
 
-The Gene Entity workflow is designed to create 14 data assets for the *`interlace-ex`* benchmark. Each data asset is derived from one or more data sources on the left. The data integration and refinement result is shown on the right. The diagram illustrates the flow and transformation relationships between them. Application `a60100` orchestrates the pipeline and executes tasks according to the planned workflow. Other applications help by building different parts of the data stack.
+The Gene Entity workflow is designed to create 14 data assets for the **`interlace-ex`** benchmark. Each data asset is derived from one or more data sources on the left. The data integration and refinement result is shown on the right. The diagram illustrates the flow and transformation relationships between them. Application `a60100` orchestrates the pipeline and executes tasks according to the planned workflow. Other applications help by building different parts of the data stack.
 
 ```mermaid
 flowchart LR
@@ -189,4 +189,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 17, 2026: Quantome SAS readme v30
+###### June 17, 2026: Quantome SAS readme v31

@@ -58,9 +58,17 @@ The following figures show the performance of our benchmark workflow designed to
 * **Errors:** 0
 * **Processing time:** 5 minutes and 24 seconds
 
-### Gene Workflow 
+### Data Refinement
 
-We designed a workflow to create 14 data assets for the *`interlace-ex`* Gene Entity benchmark. Each data asset is derived from one or more data sources on the left. The data integration and refinement result is shown on the right. The diagram illustrates the flow and transformation relationships between them. Application `a60100` orchestrates the pipeline and executes tasks according to the planned workflow. Other applications help by building different parts of the data stack.
+To build reliable AI applications, LLMs need refined data, human-in-the-loop surveillance, and governance. Quantome helps you bridge the gap between probabilistic AI agents and deterministic data:
+
+* **Token Cost Savings**: Indexed text catalogs and enumerated complex terms reduce context windows and slash API token bills.
+* **Hallucination-Free Retrieval**: Verified facts and relationships, ensuring output accuracy, are accessible for agents to retrieve directly from local parallel Gob arrays.
+* **Local Tooling for Autonomous Agents**: Because Gob arrays load instantly, you can wrap them in local Go APIs to expose them directly to agents as fast, lightweight tools.
+
+### Refinement Workflow Example
+
+The Gene Entity workflow is designed to create 14 data assets for the *`interlace-ex`* benchmark. Each data asset is derived from one or more data sources on the left. The data integration and refinement result is shown on the right. The diagram illustrates the flow and transformation relationships between them. Application `a60100` orchestrates the pipeline and executes tasks according to the planned workflow. Other applications help by building different parts of the data stack.
 
 ```mermaid
 flowchart LR
@@ -161,14 +169,6 @@ flowchart LR
 - 𓋰 **Ovals:** Data assets containing a least one Gob file
 - 𓈙 **Rectangles:** | Raw data files | or || configuration files ||
 
-### Data Refinement
-
-To build reliable AI applications, LLMs need refined data, human-in-the-loop surveillance, and governance. Quantome helps you bridge the gap between probabilistic AI agents and deterministic data:
-
-* **Token Cost Savings**: Indexed text catalogs and enumerated complex terms reduce context windows and slash API token bills.
-* **Hallucination-Free Retrieval**: Verified facts and relationships, ensuring output accuracy, are accessible for agents to retrieve directly from local parallel Gob arrays.
-* **Local Tooling for Autonomous Agents**: Because Gob arrays load instantly, you can wrap them in local Go APIs to expose them directly to agents as fast, lightweight tools.
-
 ### Our Open-Core System
 
 * **`co-interlace`**: The official open-source client integration kit. High-performance shell tools and Go structural schemas to decode, search, and pipe your refined Gob primary data streams into secondary infrastructure.
@@ -189,4 +189,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 17, 2026: Quantome SAS readme v29
+###### June 17, 2026: Quantome SAS readme v30

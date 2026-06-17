@@ -66,7 +66,7 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 
 * **Token Cost Savings**: Indexed text catalogs and enumerated complex terms reduce context windows and slash API token bills.
 * **Hallucination-Free Retrieval**: Verified facts and relationships, ensuring output accuracy, are accessible for agents to retrieve directly from local parallel Gob arrays.
-* **Local Tooling for Autonomous Agents**: Because Gob arrays load instantly, you can wrap them in local Go APIs to expose them directly to agents as fast, lightweight tools.
+* **Local Tooling for Autonomous Agents**: Because Gob arrays load instantly, you can wrap them in local Go APIs to expose them directly to agents, as fast, lightweight tools.
 
 ### Refinement Workflow Example
 
@@ -191,4 +191,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 17, 2026: Quantome SAS readme v31
+###### June 17, 2026: Quantome SAS readme v33

@@ -12,7 +12,7 @@ Whether you are working with complex biological datasets, massive system logs, o
 
 ### Data on Hold.ᐟ
 
-Every organization has valuable data sitting idle—data on hold. Whether it is sequencing files in a genetics lab, historical logs in an enterprise stack, or content databases waiting to be cataloged, data stays unused because:
+Every organization has valuable data sitting idle—data on hold. Whether it is DNA sequencing files in a genetics lab, historical logs in an enterprise stack, or content databases waiting to be cataloged, data stays unused because:
 
 1. **Infrastructure Overload**: Setting up databases and maintaining rigid SQL schemas is heavy and slow, and it requires constant migration overhead; or, more likely, there is simply no availability to accomplish the job.
 2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices.
@@ -29,7 +29,7 @@ Interlace saves I/O and memory by splitting data into columnar, parallel, Gzip-c
 
 #### 2) Fierce Byte Condensation 
 Interlace achieves massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies.
-* **Up to 29X Compression**: In our **`interlace-ex`** benchmark, 9.1 GB of compressed raw data (57 GB uncompressed) is distilled to 311 MB of refined Gob-compressed assets.
+* **Up to 30X Compression**: In our **`interlace-ex`** benchmark, 8.4 GB of compressed raw data (57 GB uncompressed) is distilled to 293 MB of refined Gob-compressed assets.
 
 #### 3) Deterministic Pipeline Orchestration
 Advanced workflows shouldn't rely on manual scheduling or unpredictable software.
@@ -39,17 +39,127 @@ Advanced workflows shouldn't rely on manual scheduling or unpredictable software
 
 #### 4) Lightning-Fast Data Refinement Workflow Engine
 The following figures show the performance of our benchmark workflow designed to create the **`interlace-ex`** data stack: 
-* **Processed input data, uncompressed:** 61,984,935,936 bytes
-* **Downloaded compressed data, disk usage:** 9,067,302,871 bytes
-* **Refined compressed Gob data, disk usage:** 311,427,072 bytes
-* **Gob encoded data tuples:** 54,296,317
-* **Volume reduction:** 29X
-* **Storage ratio:** 5.9 data tuples per byte
-* **Processing time:** 5 minutes and 24 seconds
-* **CPU Limit:** 4
+* **Processed input data, uncompressed:** 61,997,056,000 bytes (57 GB)
+* **Downloaded compressed data, disk usage:** 9,068,085,248 bytes (8.4 GB)
+* **Refined compressed Gob data, disk usage:** 307,232,768 bytes (293 MB)
+* **Gob encoded data tuples:** 54,333,557
+* **Volume reduction:** 30X
 * **Machine:** MacBook Pro M1
-* **Number of warnings:** 0
-* **Number of errors:** 0
+* **Memory usage:** < 16 GB
+* **Max workers allowed:** 4 (consider as CPUs)
+* **Input files:** 26
+* **Jobs submitted:** 15
+* **Event bash scripts generated:** 15
+* **Event logs written:** 15
+* **Entity Gob files created:** 91
+* **Total entities created:** 1 (Gene)
+* **Total assets created:** 14
+* **Warnings:** 0
+* **Errors:** 0
+* **Processing time:** 5 minutes and 24 seconds
+
+### Gene Workflow 
+
+We designed a workflow to create 14 data assets for the *`interlace-ex`* Gene Entity benchmark. Each data asset is derived from one or more data sources on the left. The data integration and refinement result is shown on the right. The diagram illustrates the flow and transformation relationships between them. Application `a60100` orchestrates the pipeline and executes tasks according to the planned workflow. Other applications help by building different parts of the data stack.
+
+```mermaid
+flowchart LR
+    db1[(EBI)] --> gwas-catalog-ancestry.tsv.gz
+    db1[(EBI)] --> gwas-catalog-associations-annotated.tsv.gz
+    db1[(EBI)] --> gwas-efo-trait-mappings.tsv.gz
+    db2[(NCBI ClinVar)] --> variant_summary.txt.gz
+    db3[(NCBI Gene DB)] --> gene2accession.gz
+    db3[(NCBI Gene DB)] --> gene2ensembl.gz
+    db3[(NCBI Gene DB)] --> gene2go.gz
+    db3[(NCBI Gene DB)] --> gene2pubmed.gz
+    db3[(NCBI Gene DB)] --> gene_info.gz
+    db3[(NCBI Gene DB)] --> gene_orthologs.gz
+    db3[(NCBI Gene DB)] --> gene_summary.gz
+    db3[(NCBI Gene DB)] --> generifs_basic.gz
+    db3[(NCBI Gene DB)] --> interactions.gz
+    db3[(NCBI Gene DB)] --> mim2gene_medgen
+    db4[(OBO Foundry)] --> gsso.obo
+    db4[(OBO Foundry)] --> hp.obo
+    db4[(OBO Foundry)] --> mondo.obo
+    db4[(OBO Foundry)] --> oba.obo
+    db5[(Reactome)] --> NCBI2Reactome_All_Levels.txt
+    db5[(Reactome)] --> NCBI2Reactome_PE_Reactions.txt
+    db5[(Reactome)] --> ReactionPMIDS.txt
+    db6[(STRING DB)] --> string-protein-links.tsv.gz
+    db7[(UniProt)] --> HUMAN_9606_idmapping.dat.gz
+    HUMAN_9606_idmapping.dat.gz --> uri[[uri.txt]]
+    NCBI2Reactome_All_Levels.txt --> uri[[uri.txt]]
+    NCBI2Reactome_PE_Reactions.txt --> uri[[uri.txt]]
+    ReactionPMIDS.txt --> uri[[uri.txt]]
+    gene2accession.gz --> uri[[uri.txt]]
+    gene2ensembl.gz --> uri[[uri.txt]]
+    gene2go.gz --> uri[[uri.txt]]
+    gene2pubmed.gz --> uri[[uri.txt]]
+    gene_info.gz --> uri[[uri.txt]]
+    gene_orthologs.gz --> uri[[uri.txt]]
+    gene_summary.gz --> uri[[uri.txt]]
+    generifs_basic.gz --> uri[[uri.txt]]
+    gsso.obo --> uri[[uri.txt]]
+    gwas-catalog-ancestry.tsv.gz --> uri[[uri.txt]]
+    gwas-catalog-associations-annotated.tsv.gz --> uri[[uri.txt]]
+    gwas-efo-trait-mappings.tsv.gz --> uri[[uri.txt]]
+    hp.obo --> uri[[uri.txt]]
+    interactions.gz --> uri[[uri.txt]]
+    mim2gene_medgen --> uri[[uri.txt]]
+    mondo.obo --> uri[[uri.txt]]
+    oba.obo --> uri[[uri.txt]]
+    string-protein-links.tsv.gz --> uri[[uri.txt]]
+    variant_summary.txt.gz --> uri[[uri.txt]]
+    meta[[meta.tsv]] --> uri[[uri.txt]]
+    sop[[sop.tsv]] --> uri[[uri.txt]]
+    work[[work.tsv]] --> uri[[uri.txt]]
+    uri[[uri.txt]] --> node0(((a60100:0)))
+    node0(((a60100:0))) -- 1,0 --> node1((a60101:1))
+    node1((a60101:1)) --> asset1([product])
+    asset1([product]) --> node2((a60102:2))
+    node0(((a60100:0))) -- 2,1,0 --> node2((a60102:2))
+    node2((a60102:2)) --> asset2([synonym])
+    node0(((a60100:0))) -- 3,0 --> node3((a60103:3))
+    node3((a60103:3)) --> asset3([metadata])
+    node0(((a60100:0))) -- 4,0 --> node4((a60104:4))
+    node4((a60104:4)) --> asset4([pubmed_reference])
+    node0(((a60100:0))) -- 5,0 --> node5((a60105:5))
+    node5((a60105:5)) --> asset5([function])
+    node0(((a60100:0))) -- 6,0 --> node6((a60106:6))
+    node6((a60106:6)) --> asset6([ontology])
+    node0(((a60100:0))) -- 7,0 --> node7((a60107:7))
+    node7((a60107:7)) --> asset7([medical_genetics])
+    node0(((a60100:0))) -- 8,0 --> node8((a60108:8))
+    node8((a60108:8)) --> asset8([ortholog])
+    node0(((a60100:0))) -- 9,0 --> node9((a60109:9))
+    node9((a60109:9)) --> asset9([molecular_interaction])
+    node0(((a60100:0))) -- 10,0 --> node10((a60110:10))
+    node10((a60110:10)) --> asset10([genetic_variation])
+    asset2([synonym]) --> node11((a60111:11))
+    node0(((a60100:0))) -- 11,2,0 --> node11((a60111:11))
+    node11((a60111:11)) --> asset11([genomic_variation])
+    node0(((a60100:0))) -- 12,0 --> node12((a60112:12))
+    node12((a60112:12)) --> asset12([pathway])
+    node0(((a60100:0))) -- 13,0 --> node13((a60113:13))
+    node13((a60113:13)) --> asset13([chemical_reaction])
+    asset2([synonym]) --> node14((a60114:14))
+    node0(((a60100:0))) -- 14,2,0 --> node14((a60114:14))
+    node14((a60114:14)) --> asset14([protein_interaction])
+    asset11([genomic_variation]) --> node15((a60115:15))
+    node0(((a60100:0))) -- 15,11,0 --> node15((a60115:15))
+    node15((a60115:15)) --> asset11([genomic_variation])
+    zEnv1>ENV_AEE_BASE_PATH]
+    zEnv2>ENV_ALT_DATA_PATH]
+    zEnv3>ENV_ALT_APPS_PATH]
+```
+
+##### Flowchart Legend
+
+- ⛁ **Cylinders:** External data providers
+- ◯ **Circles:** `go-interlace` applications
+- 𓉴 **Flags:** Environment variables
+- 𓋰 **Ovals:** Data assets containing a least one Gob file
+- 𓈙 **Rectangles:** | Raw data files | or || configuration files ||
 
 ### Data Refinement
 
@@ -62,7 +172,7 @@ To build reliable AI applications, LLMs need refined data, human-in-the-loop sur
 ### Our Open-Core System
 
 * **`co-interlace`**: The official open-source client integration kit. High-performance shell tools and Go structural schemas to decode, search, and pipe your refined Gob primary data streams into secondary infrastructure.
-* **`interlace-ex`**: Our 311 MB public playground dataset. Download it from our repository releases to experience 29X byte compression and raw terminal query speeds firsthand.
+* **`interlace-ex`**: Our 293 MB public playground dataset. Download it from our repository releases to experience 30X byte compression and raw terminal query speeds firsthand.
 
 ### A View From The Inside
 
@@ -79,4 +189,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 16, 2026: Quantome SAS readme v28
+###### June 17, 2026: Quantome SAS readme v29

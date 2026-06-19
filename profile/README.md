@@ -62,7 +62,7 @@ The following figures show the performance of our benchmark workflow designed to
 
 #### *Because LLM agents are probabilistic and LLMs act before knowing the consequences, this puts your enterprise at risk.*
 
-To improve the reliability of AI applications, LLMs need refined data, deterministic agency in the loop, and governance under human surveillance. Quantome helps you bridge the gap between probabilistic AI agents and deterministic data:
+To improve the reliability of AI applications, LLMs need refined data, deterministic agency in the loop, and governance under human surveillance. Agency is the power to affect the future, both positively and negatively. Quantome helps you bridge the gap between probabilistic AI agents and deterministic data:
 
 * **Local Tooling for Autonomous Agents**: Because Gob arrays load instantly, you can wrap them in local Go APIs to expose them directly to agents, as fast, lightweight tools.
 * **Hallucination-Free Retrieval**: Verified facts and relationships, ensuring output accuracy, are accessible for agents to retrieve directly from local parallel Gob arrays.
@@ -191,4 +191,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 19, 2026: Quantome SAS readme v39
+###### June 19, 2026: Quantome SAS readme v40

@@ -16,7 +16,7 @@ Every organization has valuable data sitting idle—data on hold. Whether it is 
 
 1. **Infrastructure Overload**: Setting up databases and maintaining rigid SQL schemas is heavy and slow, and it requires constant migration overhead; or, quite likely, there is simply no availability to accomplish the job.
 2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices.
-3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow. 
+3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow. In addition, LLMs cannot teach you to surf or master martial arts, yet other models that better understand the physical world, such as the Joint-Embedding Predictive Architecture (JEPA) offer inevitable prospects.
 
 Quantome resolves this bottleneck with **Interlace,** a lightweight, zero-dependency Go engine that runs anywhere and converts  unstructured files into song-sized, structured binary assets. 
 
@@ -191,4 +191,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 19, 2026: Quantome SAS readme v40
+###### June 19, 2026: Quantome SAS readme v41

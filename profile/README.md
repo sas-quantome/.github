@@ -20,7 +20,7 @@ Every organization has valuable data sitting idle—data on hold. Whether it is 
 
 Quantome resolves this bottleneck with **Interlace,** a lightweight, zero-dependency Go engine that runs anywhere and converts  unstructured files into song-sized, structured binary assets. 
 
-Note that LLMs are just one part of AI, and other models are anticipated. For example, LLMs cannot teach you to surf or master martial arts, yet other models that better understand the physical world, such as the Joint-Embedding Predictive Architecture (JEPA) offer inevitable prospects. The intelligence space is big. Besides linguistic intelligence, we have logical, spatial, emotional, kinaesthetic, interpersonal, existential, naturalist, and other types of intelligence.
+Note that LLMs are just one part of AI, and other models are anticipated. For example, LLMs cannot teach you to surf or master martial arts, yet other models that better understand the physical world, such as the Joint-Embedding Predictive Architecture (JEPA) offer inevitable prospects. The intelligence space is big. Besides linguistic intelligence, we have logical, spatial, visual, musical, emotional, kinaesthetic, interpersonal, existential, naturalist, and other types of intelligence.
 
 ## Interlace Capabilities
 
@@ -193,4 +193,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 19, 2026: Quantome SAS readme v46
+###### June 19, 2026: Quantome SAS readme v47

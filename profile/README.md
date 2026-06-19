@@ -15,7 +15,7 @@ Whether you are working with complex biological datasets, massive system logs, o
 Every organization has valuable data sitting idle—data on hold. Whether it is DNA sequencing files in a genetics lab, historical logs in an enterprise stack, or content databases waiting to be cataloged, data stays unused because:
 
 1. **Infrastructure Overload**: Setting up databases and maintaining rigid SQL schemas is heavy and slow, and it requires constant migration overhead; or, quite likely, there is simply no availability to accomplish the job.
-2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices.
+2. **Data Gravity**: Raw files are too large to transfer easily, compute locally, or distribute to edge devices. Traditional Enterprise Resource Planning (ERP) vendors trap an organization's data, preventing AI models from accessing or using it freely. Companies attempting to bolt AI onto legacy ERP systems face stalled projects and exorbitant change-management costs.
 3. **The AI Agent Gap**: Large Language Models (LLMs) and autonomous agents cannot reason over raw, multi-gigabyte flat files. Feeding raw text into model contexts is cost-prohibitive (due to token consumption) and slow.
 
 Quantome resolves this bottleneck with **Interlace,** a lightweight, zero-dependency Go engine that runs anywhere and converts  unstructured files into song-sized, structured binary assets. 
@@ -193,4 +193,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 19, 2026: Quantome SAS readme v44
+###### June 19, 2026: Quantome SAS readme v46

@@ -25,7 +25,7 @@ Note that LLMs are just one part of AI, and other models are anticipated. For ex
 ## Quantome's Engine Capabilities
 
 #### 1) Parallel Columnar Serialization
-Quantome's Interlace data processors save I/O and memory by splitting data into columnar, parallel, Gzip-compressed, primitive-data-type Gob files that are readable on any platform and lightning-fast. Thus, a Gob ecoded array of unsigned 8-bit integers guarantees the range 0 to 255.
+Quantome's Interlace processors are designed to build data products that save I/O and memory by splitting data into columnar, parallel, Gzip-compressed, primitive-data-type Gob files that are readable on any platform and lightning-fast. Thus, a Gob ecoded array of unsigned 8-bit integers guarantees the range 0 to 255.
 * **Load in Milliseconds**: Direct load of desired columnar data into local RAM with zero garbage-collection overhead.
 * **Adapt to Schema Changes**: Add, remove, or modify Gob files (columns) without database migrations or structured schema definitions.
 
@@ -193,4 +193,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 20, 2026: Quantome SAS readme v49
+###### June 20, 2026: Quantome SAS readme v50

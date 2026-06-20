@@ -30,7 +30,7 @@ Quantome's Interlace processors are designed to build data products that save I/
 * **Adapt to Schema Changes**: Add, remove, or modify Gob files (columns) without database migrations or structured schema definitions.
 
 #### 2) Fierce Byte Condensation 
-Quantome's Interlace data encoders achieve massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies. Each data asset, a collection of Gob-encoded files, can have a text catalog and several enumerators, and a data entity can store one or more data assets.
+Quantome's Interlace encoders achieve massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies. Each data asset, a collection of Gob-encoded files, can have a text catalog and several enumerators, and a data entity can store one or more data assets.
 * **Up to 30X Compression**: In our **`interlace-ex`** benchmark, 8.4 GB of compressed raw data (57 GB uncompressed) is distilled to 293 MB of refined Gob-compressed assets.
 
 #### 3) Deterministic Pipeline Orchestration
@@ -193,4 +193,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 20, 2026: Quantome SAS readme v50
+###### June 20, 2026: Quantome SAS readme v51

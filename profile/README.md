@@ -22,22 +22,22 @@ Quantome resolves this bottleneck with **Interlace,** a lightweight, zero-depend
 
 Note that LLMs are just one part of AI, and other models are anticipated. For example, LLMs cannot teach you to play music, surf, or master martial arts, yet other models that better understand the physical world, such as the Joint-Embedding Predictive Architecture (JEPA), offer promising prospects. The intelligence space is big. Besides linguistic intelligence, we have logical, spatial, visual, musical, emotional, kinaesthetic, interpersonal, existential, naturalist, and other types of intelligence.
 
-## Interlace Capabilities
+## Quantome's Engine Capabilities
 
 #### 1) Parallel Columnar Serialization
-Interlace saves I/O and memory by splitting data into columnar, parallel, Gzip-compressed, primitive-data-type Gob files that are readable on any platform and lightning-fast. Thus, a Gob ecoded array of unsigned 8-bit integers guarantees the range 0 to 255.
+Quantome's Interlace data processors save I/O and memory by splitting data into columnar, parallel, Gzip-compressed, primitive-data-type Gob files that are readable on any platform and lightning-fast. Thus, a Gob ecoded array of unsigned 8-bit integers guarantees the range 0 to 255.
 * **Load in Milliseconds**: Direct load of desired columnar data into local RAM with zero garbage-collection overhead.
 * **Adapt to Schema Changes**: Add, remove, or modify Gob files (columns) without database migrations or structured schema definitions.
 
 #### 2) Fierce Byte Condensation 
-Interlace achieves massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies. Each data asset, a collection of Gob-encoded files, can have a text catalog and several enumerators, and a data entity can store one or more data assets.
+Quantome's Interlace data encoders achieve massive space savings with FNV-1a 64-bit hashing for text catalogs and byte-level enumeration for controlled vocabularies. Each data asset, a collection of Gob-encoded files, can have a text catalog and several enumerators, and a data entity can store one or more data assets.
 * **Up to 30X Compression**: In our **`interlace-ex`** benchmark, 8.4 GB of compressed raw data (57 GB uncompressed) is distilled to 293 MB of refined Gob-compressed assets.
 
 #### 3) Deterministic Pipeline Orchestration
 Advanced workflows shouldn't rely on manual scheduling or unpredictable software.
 * **Deterministic Regulation Loop**: Quantome handles jobs using Interlace's Directed Acyclic Graphs (DAGs) and Standard Operating Procedures (SOPs).
-* **Platform Agnostic**: Interlace runs jobs in parallel in local machines, Slurm, or PBS high-performance computing clusters, e.g., supercomputers.
-* **Safe Supervision**: Interlace’s deterministic agent persistently monitors processes, parses execution logs, handles errors, prevents redundant runs, and, upon detecting a critical failure, alerts the pipeline to stop submitting further jobs and wasting money.
+* **Platform Agnostic**: Qunatome's pipeline runs jobs in parallel in local machines, Slurm, or PBS high-performance computing clusters, e.g., supercomputers.
+* **Safe Supervision**: Qunatome’s deterministic agent persistently monitors processes, parses execution logs, handles errors, prevents redundant runs, and, upon detecting a critical failure, alerts the pipeline to stop submitting further jobs and wasting money.
 
 #### 4) Lightning-Fast Data Refinement Workflow Engine
 The following figures show the performance of our benchmark workflow designed to create the **`interlace-ex`** data stack: 
@@ -193,4 +193,4 @@ Find out why Go is our core language, what the complexity of storing multi-omics
 
 </div>
 
-###### June 19, 2026: Quantome SAS readme v48
+###### June 20, 2026: Quantome SAS readme v49

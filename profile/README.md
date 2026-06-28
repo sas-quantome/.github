@@ -18,7 +18,7 @@ Every modern organization is sitting on terabytes of high-value data idling in s
 
 ## Reprogram Your Infrastructure to a "Clean-Slate" Pluripotent State
 
-Quantome resolves this bottleneck with **Interlace**, a lightweight, zero-dependency Go engine that runs anywhere. We decouple your information from rigid legacy schemas, converting raw files into song-sized, structured binary assets that act as your permanent primary storage layer.
+Quantome resolves this bottleneck with Interlace, a lightweight, zero-dependency Go engine that runs anywhere. We separate your information from rigid legacy schemas, converting raw files into song-sized, structured binary assets that act as your permanent primary storage layer.
 
 Treat massive cloud vendor platforms as disposable secondary indexes. Own your source of truth.
 
@@ -66,4 +66,4 @@ Stop paying legacy vendors to hold your own data hostage. Let Quantome convert y
 
 **Quantome, SAS.** *Permanent Primary Storage for the Multi-Modal Future.* [https://www.sas-quantome.com](https://www.sas-quantome.com)  |  Operating globally from France.
 
-###### June 28, 2026: Quantome SAS readme v56
+###### June 28, 2026: Quantome SAS readme v57

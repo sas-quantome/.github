@@ -2,7 +2,7 @@
 
 ![go-interlace](go-interlace.png)
 
-### The Data Refinery for Enterprise AI.
+## The Data Refinery for Enterprise AI.
 
 **We transform hefty data sludge into ultra-refined, deterministic Gob digital assets. Zero friction. Zero cloud vendor lock-in.**
 
@@ -66,4 +66,4 @@ Stop paying legacy vendors to hold your own data hostage. Let Quantome transform
 
 **Quantome, SAS.** *Permanent Primary Storage for the Multi-Modal Future.* [https://www.sas-quantome.com](https://www.sas-quantome.com)  |  Operating globally from France.
 
-###### June 28, 2026: Quantome SAS readme v52
+###### June 28, 2026: Quantome SAS readme v53

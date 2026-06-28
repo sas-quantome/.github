@@ -50,7 +50,7 @@ Probabilistic LLM agents act before knowing the consequences—putting enterpris
 
 ## Our Open-Core Architecture
 
-We protect our proprietary refinery mathematics while giving your engineering team complete, transparent freedom over downstream interoperability.
+We protect our proprietary refinery computation while giving your engineering team complete, transparent freedom over downstream interoperability.
 
 ### `go-interlace` (Proprietary Engine)
 
@@ -66,4 +66,4 @@ Stop paying legacy vendors to hold your own data hostage. Let Quantome transform
 
 **Quantome, SAS.** *Permanent Primary Storage for the Multi-Modal Future.* [https://www.sas-quantome.com](https://www.sas-quantome.com)  |  Operating globally from France.
 
-###### June 28, 2026: Quantome SAS readme v53
+###### June 28, 2026: Quantome SAS readme v54

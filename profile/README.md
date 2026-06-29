@@ -58,7 +58,7 @@ The core industrial data refinery. Applies advanced Directed Acyclic Graphs (DAG
 
 ### `co-interlace` (Open-Source Client Kit)
 
-The official public client integration kit. High-performance shell terminal tools and Go structural schemas designed to decode, search, and pipe your refined Gob primary data streams natively into LLMs, BigQuery, Slurm supercomputers, or Elasticsearch. The codebase includes *interlace-ex* and 44 examples for decoding and retrieving data from the Gob assets. For advanced research work, query results can be saved in Open Knowledge Format (OKF) files, which are agentic-system-friendly and human-readable.
+The official public client integration kit. High-performance shell terminal tools and Go structural schemas designed to decode, search, and pipe your refined Gob primary data streams natively into LLMs, BigQuery, Slurm supercomputers, or Elasticsearch. The codebase includes **`interlace-ex`** and 44 examples for decoding and retrieving data from the Gob assets. For advanced research work, query results can be saved in Open Knowledge Format (OKF) files, which are agentic-system-friendly and human-readable.
 
 ## Ready to Turn Your Idle Data Into an Ultra-Condensed Source of Truth?
 
@@ -66,4 +66,4 @@ Stop paying legacy vendors to hold your own data hostage. Let Quantome convert y
 
 **Quantome, SAS.** *Permanent Primary Storage for the Multi-Modal Future.* [https://www.sas-quantome.com](https://www.sas-quantome.com)  |  Operating globally from France.
 
-###### June 28, 2026: Quantome SAS readme v60
+###### June 28, 2026: Quantome SAS readme v61

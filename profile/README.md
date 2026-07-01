@@ -31,12 +31,12 @@ We don’t just compress data; we fundamentally improve its mathematical topolog
 
 In our standard **`interlace-ex` benchmark**, our engine executed the following distillation on a standard laptop:
 
-| Metric                  | Traditional Uncompressed   | Refined Quantome Asset (Gob)      | Net Impact                |
-|-------------------------|----------------------------|-----------------------------------|---------------------------|
-| **Storage Footprint**   | 57 GB (61.99 GB Raw)       | **293 MB** (307.2 MB Disk Usage)  | **30X Volume Reduction**  |
-| **RAM Loading Speed**   | Minutes (Heavy Parsing)    | **Milliseconds**                  | Direct byte-to-RAM access |
-| **Runtime Environment** | Heavy Cloud Cluster        | **<16 GB RAM** (MacBook Pro M1)   | **4 CPU Workers Max**     |
-| **Processing Time**     | Hours of pipeline overhead | **5 Minutes, 24 Seconds**         | **100% Deterministic**    |
+| Metric                  | Traditional Uncompressed         | Refined Quantome Asset (Gob)      | Net Impact                |
+|-------------------------|----------------------------------|-----------------------------------|---------------------------|
+| **Storage Footprint**   | 8.6 GB (57 GB raw, uncompressed) | **293 MB** (refined, compressed)  | **30X Volume Reduction**  |
+| **RAM Loading Speed**   | Minutes (Heavy Parsing)          | **Milliseconds**                  | Direct byte-to-RAM access |
+| **Runtime Environment** | Heavy Cloud Cluster              | **<16 GB RAM** (MacBook Pro M1)   | **4 CPU Workers Max**     |
+| **Processing Time**     | Hours of pipeline overhead       | **5 Minutes, 24 Seconds**         | **100% Deterministic**    |
 
 > *"Direct load of desired columnar data into local RAM guarantees zero Go garbage-collection overhead. Add, remove, or modify columns instantly without writing a single SQL migration."*
 
@@ -66,4 +66,4 @@ Stop paying legacy vendors to hold your own data hostage. Let Quantome convert y
 
 **Quantome, SAS.** *Permanent Primary Storage for the Multi-Modal Future.* [https://www.sas-quantome.com](https://www.sas-quantome.com)  |  Operating globally from France.
 
-###### June 28, 2026: Quantome SAS readme v61
+###### July 1, 2026: Quantome SAS readme v62

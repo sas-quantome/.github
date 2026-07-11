@@ -4,7 +4,7 @@
 
 ## Brain vs. Muscle
 
-Public and private organizations are sitting on vast amounts of high-value data—from multi-omics DNA sequencing files to massive system logs—that remain on hold and thus unexploitable [[1](#1)]. Traditional infrastructure traps this data behind rigid SQL schemas, heavy migration overhead, and proprietary ERP vendor lock-in [[2](#2)].
+Public and private organizations are sitting on vast amounts of high-value data—from multi-omics DNA sequencing files to massive system logs—that remain on hold and thus unexploitable [[1](#1)]. Traditional infrastructure traps this data behind rigid SQL schemas, heavy migration overhead, and proprietary Enterprise Resource Planning (ERP) vendor lock-in [[2](#2)].
 
 Simultaneously, deploying Large Language Models (LLMs) against this data is fundamentally useless. LLMs cannot reason over multi-gigabyte flat files, and feeding raw text into context windows is both financially prohibitive and slow [[3](#3)]. Probabilistic AI agents attempt to carry out tasks without knowing the consequences, lacking the deterministic guardrails required for secure enterprise operations [[4](#4)].
 
@@ -102,4 +102,4 @@ Mario Foglio (Jun 26, 2026). ["Hacking InterlaceEx: 44 Command Line Exercises."]
 Google Cloud Platform, knowledge-catalog (Jun 12, 2026). ["Open Knowledge Format (OKF)"](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) GitHub.
 
 
-###### July 11, 2026: Quantome SAS readme v69
+###### July 11, 2026: Quantome SAS readme v71

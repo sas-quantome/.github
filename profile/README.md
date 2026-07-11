@@ -1,7 +1,3 @@
-![go-interlace](go-interlace.png)
-
-***
-
 # [QUANTOME, SAS.](https://www.quantome.com)
 
 **Deterministic data architecture. Vertically partitioned Gob arrays built for millisecond query speed and zero cloud lock-in.**
@@ -16,9 +12,10 @@ Simultaneously, deploying Large Language Models (LLMs) against this data is fund
 
 Quantome helps resolve this bottleneck with `go-interlace`, a lightweight, zero-dependency Go engine. We compile raw datasets into immutable, Gob song-sized binary assets that serve as a permanent primary storage layer [[5](#5)].
 
-We achieve this by strictly improving the mathematical topology of the data through parallel columnar serialization and low-collision non-cryptographic hashing. 
+We achieve this by strictly improving the mathematical topology of the data through parallel columnar serialization and low-collision non-cryptographic hashing. By separating information from legacy schemas, you can treat cloud platforms as downstream disposable, transient tools and truly own your source of truth [[6](#6)].
 
-A common question is why `co-interlace` uses compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Autonomous AI agents [[6](#6)] or high-performance computing pipelines need to retrieve verified facts; they require immutability, zero-dependency execution, and byte-level RAM efficiency.
+
+A common question is why `co-interlace` uses compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Autonomous AI agents [[7](#7)] or high-performance computing pipelines need to retrieve verified facts; they require immutability, zero-dependency execution, and byte-level RAM efficiency.
 
 
 | Architectural Vector       | Python / Pandas Ecosystem                             | Interlace Gob Architecture                             |
@@ -28,8 +25,6 @@ A common question is why `co-interlace` uses compiled Go binaries and `.gob.gz` 
 | **State Mutability**       | Mutable in-memory (High risk of data alteration)      | Immutable, FNV-1a 64-bit hashed (100% Deterministic)   |
 | **Pipeline Integration**   | Data trapped within the Python runtime                | Native POSIX compatibility, e.g., cut, sort, sed       |
 | **Licensing & Compliance** | High risk of Anaconda commercial fees & SBOM bloat    | Clean Apache-2.0 single static binary                  |
-
-By separating information from legacy schemas, you can treat cloud platforms as downstream disposable, transient tools and truly own your source of truth [[7](#7)].
 
 ## Benchmark
 
@@ -52,6 +47,8 @@ Because our vertically partitioned arrays load in milliseconds, you can wrap the
 
 We offer engineering teams transparent, absolute freedom in downstream interoperability while protecting our proprietary data-refinery algorithms.
 
+![go-interlace](go-interlace.png)
+
 ### 1. `go-interlace` (Proprietary Engine)
 
 The private data refinery orchestrator. It applies advanced Directed Acyclic Graphs (DAGs) and Standard Operating Procedures (SOPs) to enforce deterministic data consolidation [[11](#11)]. It persistently monitors processes, parses execution logs, prevents redundant billing runs, and automatically halts cluster submission upon detecting critical anomalies [[9](#9)].
@@ -68,44 +65,44 @@ The public, high-performance integration SDK and terminal toolkit [[10](#10)]. E
 ## References
 
 ###### 1
-##### Elen Friedman (Mar 29, 2022).  ["5 Types of Costly Data Waste and How to Avoid Them"](https://www.cio.com/article/307487/5-types-of-costly-data-waste-and-how-to-avoid-them.html) CIO. Retrieved Jul 10, 2026.
+Elen Friedman (Mar 29, 2022).  ["5 Types of Costly Data Waste and How to Avoid Them"](https://www.cio.com/article/307487/5-types-of-costly-data-waste-and-how-to-avoid-them.html) CIO. Retrieved Jul 10, 2026.
 
 ###### 2
-##### Salim Ismail (Jun 18, 2026).  ["The Data Ransom, Why Your ERP is Killing Your AI Strategy"](https://www.youtube.com/watch?v=_3NQ8QAKQu8) YouTube.
+Salim Ismail (Jun 18, 2026).  ["The Data Ransom, Why Your ERP is Killing Your AI Strategy"](https://www.youtube.com/watch?v=_3NQ8QAKQu8) YouTube.
 
 ###### 3
-##### Dust (Sep 2025). ["Understanding LLM Limitations: Counting and Parsing Structured Data."](https://docs.dust.tt/docs/understanding-llm-limitations-counting-and-parsing-structured-data) Retrieved Jul 10, 2026.
+Dust (Sep 2025). ["Understanding LLM Limitations: Counting and Parsing Structured Data."](https://docs.dust.tt/docs/understanding-llm-limitations-counting-and-parsing-structured-data) Retrieved Jul 10, 2026.
 
 ###### 4
-##### Unsupervised Learning: With Jacob Effron (May 15, 2026). ["Yann LeCun on What Comes After LLMs"](https://www.youtube.com/watch?v=ngBraLDqzdI) YouTube.
+Unsupervised Learning: With Jacob Effron (May 15, 2026). ["Yann LeCun on What Comes After LLMs"](https://www.youtube.com/watch?v=ngBraLDqzdI) YouTube.
 
 ###### 5
-##### Go (Jul 7, 2026) ["gob"](https://pkg.go.dev/encoding/gob) The Go Documentation. Retrieved Jul 10, 2026.
+Go (Jul 7, 2026) ["gob"](https://pkg.go.dev/encoding/gob) The Go Documentation. Retrieved Jul 10, 2026.
 
 ###### 6
-##### Mekouar, Y., Lahmer, M., & Karim, M. (Aug 7, 2025). ["Optimizing Data Pipelines for Green AI: A Comparative Analysis of Pandas, Polars, and PySpark for CO2 Emission Prediction"](https://www.mdpi.com/2073-431X/14/8/319) Computers, 14(8), 319.
+Mario Foglio (Jun 15, 2026). ["Inside InterlaceOne: The 6-Minute Blueprint."](https://www.youtube.com/) YouTube.
 
 ###### 7
-##### Mario Foglio (Jun 15, 2026). ["Inside InterlaceOne: The 6-Minute Blueprint."](https://www.youtube.com/) YouTube.
+Mekouar, Y., Lahmer, M., & Karim, M. (Aug 7, 2025). ["Optimizing Data Pipelines for Green AI: A Comparative Analysis of Pandas, Polars, and PySpark for CO2 Emission Prediction"](https://www.mdpi.com/2073-431X/14/8/319) Computers, 14(8), 319.
 
 ###### 8
-##### Rob Pike (Mar 24, 2011). ["Gobs of data"](https://go.dev/blog/gob) The Go Blog. Retrieved Jul 10, 2026.
+Rob Pike (Mar 24, 2011). ["Gobs of data"](https://go.dev/blog/gob) The Go Blog. Retrieved Jul 10, 2026.
 
 ###### 9
-##### Mario Foglio (Jun 26, 2026). ["Reverse engineering InterlaceEx: Structured Genetic Data Benchmark"](https://github.com/sas-quantome/co-interlace/tree/main/docs/d10100) GitHub.
+Mario Foglio (Jun 26, 2026). ["Reverse engineering InterlaceEx: Structured Genetic Data Benchmark"](https://github.com/sas-quantome/co-interlace/tree/main/docs/d10100) GitHub.
 
 ###### 10
-##### Mario Foglio (Jun 26, 2026). ["Open-source CoInterlace"](https://github.com/sas-quantome/co-interlace/) GitHub.
+Mario Foglio (Jun 26, 2026). ["Open-source CoInterlace"](https://github.com/sas-quantome/co-interlace/) GitHub.
 
 ###### 11
-##### Manish Bhattarai, Minh Vu (Feb 11, 2026). ["Trustworthy Agentic AI Requires Deterministic Architectural Boundaries"](https://arxiv.org/pdf/2602.09947) arXiv:2602.09947.
+Manish Bhattarai, Minh Vu (Feb 11, 2026). ["Trustworthy Agentic AI Requires Deterministic Architectural Boundaries"](https://arxiv.org/pdf/2602.09947) arXiv:2602.09947.
 
 ###### 12
-##### Mario Foglio (Jun 26, 2026). ["Hacking InterlaceEx: 44 Command Line Exercises."](https://github.com/sas-quantome/co-interlace/tree/main/docs/d10100) GitHub.
+Mario Foglio (Jun 26, 2026). ["Hacking InterlaceEx: 44 Command Line Exercises."](https://github.com/sas-quantome/co-interlace/tree/main/docs/d10100) GitHub.
 
 ###### 13
-##### Google Cloud Platform, knowledge-catalog (Jun 12, 2026). ["Open Knowledge Format (OKF)"](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) GitHub.
+Google Cloud Platform, knowledge-catalog (Jun 12, 2026). ["Open Knowledge Format (OKF)"](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) GitHub.
 
 ***
 
-###### July 11, 2026: Quantome SAS readme v64
+###### July 11, 2026: Quantome SAS readme v65

@@ -14,7 +14,7 @@ Quantome helps resolve this bottleneck with `go-interlace`, a lightweight, zero-
 
 We achieve this by strictly improving the mathematical topology of the data through parallel columnar serialization and low-collision non-cryptographic hashing. By separating information from legacy schemas, you can treat cloud platforms as downstream disposable, transient tools and truly own your source of truth [[6](#6)].
 
-A common question is why use compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Although Pandas or Polars are excellent for in-memory data exploration, autonomous AI agents or high-performance computing pipelines need to process vast amounts of data, requiring immutability, zero-dependency execution, and byte-level RAM efficiency. They are not optimal for autonomous AI high-performance computing orchestration [[7](#7)].
+A common question is why use compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Although Pandas or Polars are excellent for in-memory data exploration, autonomous AI agents or high-performance computing pipelines need to process vast amounts of data (without booting a Spark session and starting the billing metric running), requiring immutability, zero-dependency execution, and byte-level RAM efficiency. They are not optimal for autonomous AI high-performance computing orchestration [[7](#7)].
 
 | Architectural Vector       | Python / Pandas Ecosystem                             | Interlace Gob Architecture                             |
 |----------------------------|-------------------------------------------------------|--------------------------------------------------------|
@@ -102,4 +102,4 @@ Mario Foglio (Jun 26, 2026). ["Hacking InterlaceEx: 44 Command Line Exercises."]
 Google Cloud Platform, knowledge-catalog (Jun 12, 2026). ["Open Knowledge Format (OKF)"](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) GitHub.
 
 
-###### July 11, 2026: Quantome SAS readme v67
+###### July 11, 2026: Quantome SAS readme v68

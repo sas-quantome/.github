@@ -15,7 +15,7 @@ Quantome helps resolve this bottleneck with `go-interlace`, a lightweight, zero-
 We achieve this by strictly improving the mathematical topology of the data through parallel columnar serialization and low-collision non-cryptographic hashing. By separating information from legacy schemas, you can treat cloud platforms as downstream disposable, transient tools and truly own your source of truth [[6](#6)].
 
 
-A common question is why `co-interlace` uses compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Autonomous AI agents [[7](#7)] or high-performance computing pipelines need to retrieve verified facts; they require immutability, zero-dependency execution, and byte-level RAM efficiency.
+A common question is why using compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Autonomous AI agents [[7](#7)] or high-performance computing pipelines need to retrieve verified facts; they require immutability, zero-dependency execution, and byte-level RAM efficiency.
 
 
 | Architectural Vector       | Python / Pandas Ecosystem                             | Interlace Gob Architecture                             |
@@ -103,6 +103,5 @@ Mario Foglio (Jun 26, 2026). ["Hacking InterlaceEx: 44 Command Line Exercises."]
 ###### 13
 Google Cloud Platform, knowledge-catalog (Jun 12, 2026). ["Open Knowledge Format (OKF)"](https://github.com/GoogleCloudPlatform/knowledge-catalog/blob/main/okf/SPEC.md) GitHub.
 
-***
 
-###### July 11, 2026: Quantome SAS readme v65
+###### July 11, 2026: Quantome SAS readme v66

@@ -28,7 +28,7 @@ A common question is why use compiled Go binaries and `.gob.gz` arrays instead o
 
 The architecture guarantees zero Go garbage-collection overhead and loads only the required columnar Gob files directly into local RAM.<sup>8</sup> It permits additive schema evolution, allowing developers to add, remove, or modify columns instantly without writing a single SQL migration.
 
-The *interlace-ex* benchmark, the *go-interlace* engine executed the following pipeline strictly locally on a standard MacBook Pro M1, under 16 GB RAM, capped at 4 CPU workers:<sup>9</sup>
+The *interlace-ex* benchmark shows that the *go-interlace* engine executed the following pipeline strictly locally on a standard MacBook Pro M1, under 16 GB RAM, capped at 4 CPU workers:<sup>9</sup>
 
 | Metric                  | Traditional Uncompressed    | Refined Quantome Asset (Gob) | Net Impact                |
 |-------------------------|-----------------------------|------------------------------|---------------------------|
@@ -53,7 +53,7 @@ The private data refinery orchestrator. It applies advanced Directed Acyclic Gra
 
 The public, high-performance integration SDK and terminal toolkit.<sup>10</sup> Engineered to decode, search, and pipe refined primary data streams natively into local LLMs, supercomputers, edge computing devices, and databases.
 
-* Includes the **`interlace-ex`** dataset and 44 distinct query examples.<sup>12</sup>
+* Includes the *interlace-ex* dataset and 44 distinct query examples.<sup>12</sup>
 * Natively exports query results into Open Knowledge Format (OKF) files—structured data that is both human-readable and optimized for agentic LLM consumption.<sup>13</sup>
 
 ### ➜ [ **Request Architectural Review** ](https://github.com/sas-quantome)
@@ -76,4 +76,4 @@ The public, high-performance integration SDK and terminal toolkit.<sup>10</sup> 
 
 ## Last Updated
 
-###### July 31, 2026: Quantome SAS readme v76
+###### July 31, 2026: Quantome SAS readme v77

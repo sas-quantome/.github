@@ -1,6 +1,6 @@
 # [Quantome, SAS.](https://www.quantome.com)
 
-Quantome’s **Interlace Architecture** organizes data into immutable versioned data assets. It keeps the footprints of every processing event as proofs of work independent from the Interlace Engine, giving you total IP authority.
+Quantome’s **Interlace Architecture** organizes data into immutable versioned data assets. It keeps the footprints of every processing event as proofs of work independent from the *Interlace Engine*, giving you total IP authority.
 
 ![go-interlace](go-interlace.png)
 
@@ -84,4 +84,4 @@ The public, high-performance integration SDK and terminal toolkit.<sup>10</sup> 
 
 ## Last Updated
 
-###### August 1, 2026: Quantome SAS readme v78
+###### August 1, 2026: Quantome SAS readme v79

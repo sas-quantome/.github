@@ -1,12 +1,14 @@
 # [Quantome, SAS.](https://www.quantome.com)
 
+Quantome’s **Interlace Architecture** organizes data into immutable versioned data assets. It keeps the footprints of every processing event as proofs of work independent from the Interlace Engine, giving you total IP authority.
+
 ![go-interlace](go-interlace.png)
 
 ## Brain vs. Muscle
 
 Public and private organizations are sitting on vast amounts of high-value data—from multi-omics DNA sequencing files to massive system logs—that remain on hold and thus unexploitable.<sup>1</sup> Traditional infrastructure traps this data behind rigid SQL schemas, heavy migration overhead, and proprietary Enterprise Resource Planning (ERP) vendor lock-in.<sup>2</sup>
 
-Simultaneously, deploying Large Language Models (LLMs) against this data is fundamentally useless. LLMs cannot reason over multi-gigabyte flat files, and feeding raw text into context windows is both financially prohibitive and slow.<sup>3</sup> Probabilistic AI agents attempt to carry out tasks without knowing the consequences, lacking the deterministic guardrails required for secure enterprise operations.<sup>4</sup>
+Simultaneously, deploying Large Language Models (LLMs) against this data is fundamentally wrong. LLMs cannot reason over multi-gigabyte flat files, and feeding raw text into context windows is both financially prohibitive and slow.<sup>3</sup> Probabilistic AI agents attempt to carry out tasks without knowing the consequences, lacking the deterministic guardrails required for secure enterprise operations.<sup>4</sup>
 
 ## Deterministic Data Architecture
 
@@ -14,7 +16,7 @@ Quantome helps resolve this bottleneck with *go-interlace*, a lightweight, zero-
 
 This is achieved by strictly improving the mathematical topology of the data through parallel columnar serialization and low-collision non-cryptographic hashing. By separating information from legacy schemas, you can treat cloud platforms as downstream disposable, transient tools and truly own your source of truth.<sup>6</sup>
 
-A common question is why use compiled Go binaries and `.gob.gz` arrays instead of Python-based tools. The answer is primarily structural. Although Pandas and Polars are excellent for in-memory data exploration, autonomous AI agents or high-performance computing pipelines that process vast amounts of data require immutability, zero-dependency execution, and byte-level RAM efficiency. They are not optimal for autonomous AI orchestration.<sup>7</sup>
+A common question is why use compiled Go binaries and Gob arrays instead of Python-based tools. The answer is primarily structural. Although Pandas and Polars are excellent for in-memory data exploration, autonomous AI agents or high-performance computing pipelines that process vast amounts of data require immutability, zero-dependency execution, and byte-level RAM efficiency. They are not optimal for autonomous AI orchestration.<sup>7</sup>
 
 | Architectural Vector       | Python / Pandas Ecosystem                             | Interlace Gob Architecture                             |
 |----------------------------|-------------------------------------------------------|--------------------------------------------------------|
@@ -49,14 +51,20 @@ Quantome offers engineering teams transparent, absolute freedom in downstream in
 
 The private data refinery orchestrator. It applies advanced Directed Acyclic Graphs (DAGs) and Standard Operating Procedures (SOPs) to enforce deterministic data consolidation.<sup>11</sup> It persistently monitors processes, parses execution logs, prevents redundant billing runs, and automatically halts cluster submission upon detecting critical anomalies.<sup>9</sup>
 
+##### ➜ [ **Request Architectural Review** ](https://github.com/sas-quantome)
+
+Imperatively, while the sophisticated logic of multi-omics synthesis and refinery execution remains the domain of the *go-interlace Engine*, the *co-interlace SDK* serves as the singular operational interface for the downstream developer community. 
+
+The serialization of datasets into Gob arrays is straightforward. Developers can refactor local workflows to use Gob binary encoding with minimal friction. Due to the architecture’s deterministic simplicity, any asset structured under the *Entity Framework* is instantly accessible to the SDK. 
+
+By delivering data exclusively through single-native-type Gob arrays, the framework assures that legacy Python Gob decoders ingest and process these deterministic streams with absolute precision.
+
 ### 2. *co-interlace* (Open-Source Client)
 
 The public, high-performance integration SDK and terminal toolkit.<sup>10</sup> Engineered to decode, search, and pipe refined primary data streams natively into local LLMs, supercomputers, edge computing devices, and databases.
 
 * Includes the *interlace-ex* dataset and 44 distinct query examples.<sup>12</sup>
 * Natively exports query results into Open Knowledge Format (OKF) files—structured data that is both human-readable and optimized for agentic LLM consumption.<sup>13</sup>
-
-### ➜ [ **Request Architectural Review** ](https://github.com/sas-quantome)
 
 ## References
 
@@ -76,4 +84,4 @@ The public, high-performance integration SDK and terminal toolkit.<sup>10</sup> 
 
 ## Last Updated
 
-###### July 31, 2026: Quantome SAS readme v77
+###### August 1, 2026: Quantome SAS readme v78

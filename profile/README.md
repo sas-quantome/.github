@@ -12,19 +12,21 @@ Quantome offers engineering teams transparent, absolute freedom in downstream in
 
 The private data refinery orchestrator helps you consolidate complex datasets. It applies advanced Directed Acyclic Graphs (DAGs) and Standard Operating Procedures (SOPs) to enforce deterministic data consolidation. It persistently monitors processes, parses execution logs, prevents redundant billing runs, and automatically halts cluster submission upon detecting critical anomalies.
 
-##### ➜ [ **Request Architectural Review** ](https://github.com/sas-quantome)
+#### ➜ [ **Request Architectural Review** ](https://github.com/sas-quantome)
 
 Imperatively, while the sophisticated logic of multi-omics synthesis and refinery execution remains the domain of the **Interlace Engine**, the **Interlace SDK** serves as the singular operational interface for the downstream developer community. 
 
-The storing of data into Gob arrays is straightforward. Developers can refactor local workflows to use Gob binary encoding with minimal friction. Due to the architecture’s deterministic simplicity, any asset structured under the **Interlace Architecture** is instantly accessible to the SDK. Rob Pike, one of the creators of the Go programming language and inventor of having overlapping windows in your computer, explains clearly [why](https://go.dev/blog/gob) a new encoding is necessary. 
+The storing of data into Gob arrays is straightforward. Developers can refactor local workflows to use Gob encoding with minimal friction. Due to the architecture’s deterministic simplicity, any asset structured under the **Interlace Architecture** is instantly accessible to the SDK. Rob Pike, one of the creators of the Go programming language and the inventor of having overlapping windows in your computer, explains clearly why a new encoding is necessary: 
 
-Go binary streams (Gob) are self-describing and excel at encoding and decoding large arrays more efficiently than other other formats, most notably JSON and XML, which are highly verbose textual representations. By delivering data exclusively through single-native-type Gob arrays, the **Interlace SDK** assures that legacy Python Gob decoders ingest and process these deterministic streams with absolute precision.
+#### ➜ [ **Why Gobs of Data** ](https://go.dev/blog/gob)
+
+A Go binary stream (Gob) is self-describing and excels at encoding and decoding large arrays more efficiently than other other formats, most notably JSON and XML, which are highly verbose textual representations. By delivering data exclusively through single-native-type Gob arrays, the **Interlace SDK** assures that legacy Python Gob decoders ingest and process these deterministic streams with absolute precision.
 
 ### 2. Interlace SDK (*co-interlace*)
 
 The public, high-performance integration SDK and terminal toolkit, is engineered to decode, search, and pipe refined Gob streams natively into local LLMs, supercomputers, edge computing devices, and databases.
 
-##### ➜ [ **Interlace SDK Repository** ](https://github.com/sas-quantome/co-interlace)
+#### ➜ [ **Interlace SDK Repository** ](https://github.com/sas-quantome/co-interlace)
 
 * The SDK repository includes the **Interlace Benchmark** dataset and 44 distinct query examples.
 * Natively exports query results into Open Knowledge Format (OKF) files—structured data that is both human-readable and optimized for agentic LLM consumption.
@@ -33,23 +35,23 @@ Quantome’s **Interlace Architecture** organizes data into immutable versioned 
 
 ## Deterministic Data Architecture
 
-The single-native-type Gob array architecture guarantees zero Go garbage-collection overhead and loads only the required columnar Gob files directly into local RAM. It permits additive schema evolution, allowing developers to add, remove, or modify columns instantly without writing a single SQL migration.
+The versioned, parallel, single-native-type Gob array architecture guarantees no data edits, zero Go garbage-collection overhead, and loads only the required columnar Gob files directly into local RAM. However, it permits additive schema evolution, allowing developers to add columns instantly without writing a single SQL migration. The system design is a late-binding schema. The exact shape of the parallel Gob array structure is revealed at loading time.
 
 ### 1. Structural Immutability (*co-interlace*)
 
-A common question is why use compiled Go binaries and Gob arrays instead of Python-based tools. The answer is primarily structural. Although Pandas and Polars are excellent for in-memory data exploration, autonomous AI agents or high-performance computing pipelines that process vast amounts of data require immutability, zero-dependency execution, and byte-level RAM efficiency. They are not optimal for autonomous AI orchestration.
+A common question is why use compiled Go binaries and Gob arrays instead of Python-based tools. The answer is primarily structural. Although Pandas and Polars are excellent for in-memory data exploration, autonomous AI agents or high-performance computing pipelines that process vast amounts of data require immutability, zero-dependency execution, and byte-level RAM efficiency. They are not optimal for autonomous AI orchestration. Pandas and Polars rely on mutable, tabular data frames optimized for statistical analysis, rather than version-controlled relationship networks.
 
-| Architectural Vector       | Python / Pandas Ecosystem                             | Interlace Gob Architecture                             |
+| Architectural Vector       | Python / Pandas                                       | Interlace Gob Architecture                             |
 |----------------------------|-------------------------------------------------------|--------------------------------------------------------|
 | **Execution Footprint**    | Requires heavy runtime, e.g., Python, pip, C-bindings | Zero-dependency compiled Go binary                     |
 | **Memory Allocation**      | 5x-10x bloat; loads horizontal chunks                 | Strict vertical partitioning; loads exact bytes to RAM |
-| **State Mutability**       | Mutable in-memory (High risk of data alteration)      | Immutable, FNV-1a 64-bit hashed (100% Deterministic)   |
-| **Pipeline Integration**   | Data trapped within the Python runtime                | Native Linux-based compatibility, e.g., cut, sort, sed       |
+| **State Mutability**       | Mutable in-memory (High risk of data alteration)      | Immutable primitive integers and FNV-1a 64-bit hashes  |
+| **Pipeline Integration**   | Data trapped within the Python runtime                | Native Linux-based compatibility, e.g., cut, sort, sed |
 | **Licensing & Compliance** | High risk of Anaconda commercial fees & SBOM bloat    | Clean Apache-2.0 single static binary                  |
 
 ### 2. Interlace Benchmark (*interlace-ex*)
 
-The benchmark shows that the **Interlace Engine** executed the following pipeline strictly locally on a standard MacBook Pro M1, under 16 GB RAM, capped at 4 CPU workers:
+Performance and footprint are analyzed with the **Interlace Benchmark** dataset. The Interlace Engine executed the *interlace-ex* pipeline strictly locally on a standard MacBook Pro M1, under 16 GB RAM, capped at 4 CPU workers:
 
 | Metric                  | Traditional Uncompressed    | Refined Quantome Asset (Gob) | Net Impact                |
 |-------------------------|-----------------------------|------------------------------|---------------------------|
@@ -58,10 +60,12 @@ The benchmark shows that the **Interlace Engine** executed the following pipelin
 | **Runtime Environment** | Heavy Cloud Cluster         | <16 GB RAM                   | 4 CPU Workers Max         |
 | **Processing Time**     | Hours of pipeline overhead  | 5 Minutes, 24 Seconds        | 100% Deterministic        |
 
+#### ➜ [ **Benchmark Report** ](https://github.com/sas-quantome/co-interlace/tree/main/docs/d10100)
+
 ## AI Integration
 
 Because the vertically partitioned arrays load in milliseconds, you can wrap them in local Go APIs to expose verified information directly to autonomous agents as lightning-fast tools. Pre-indexed text catalogs and enumerated controlled vocabularies radically shrink context windows, slashing API token bills. Agents retrieve immutable, mathematically verified relationships, thereby guaranteeing hallucination-free retrieval.
 
 ## Last Updated
 
-###### August 2, 2026: Quantome SAS readme v80
+###### August 3, 2026: Quantome SAS readme v82

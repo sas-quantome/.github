@@ -4,6 +4,6 @@ Quantome is a Paris-based company founded in 2013, dedicated to bioinformatics a
 
 ![interlace](interlace-go.png)
 
-*Quant + ome = quantitative analysis of biological molecules or entities in an organism.*
+*Quant ★ ome ᯓ➤ quantitative analysis 🧪 of biological molecules 🧬 or entities 🦠 in an organism 👣*
 
-###### October 1, 2026: main readme v81
+###### October 1, 2026: main readme v82

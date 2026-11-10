@@ -9,7 +9,7 @@ We govern data soundly by keeping digital assets free from infrastructure bloat,
 ### Open-Source Architecture Stack
 
 * **[`interlace-go`](https://github.com/sas-quantome/interlace-go)** — Columnar binary shredding engine written in Go for zero-copy PyTorch/NumPy ingestion.
-* **[`interlace-do`](https://github.com/sas-quantome/interlace-do)** — Deterministic DAG orchestrator ([`a32005`](https://github.com/sas-quantome/interlace-do/tree/main/cmd/a32005)) and provenance journaling framework.
+* **[`interlace-do`](https://github.com/sas-quantome/interlace-do)** — Deterministic DAG orchestrator ([`a32005`](https://github.com/sas-quantome/interlace-do/tree/main/cmd/a32005/README.md)) and provenance journaling framework.
 * **[`interlace-ex`](https://github.com/sas-quantome/interlace-ex)** — Reference multi-omic pipelines and 40x consolidation benchmarks (57 GB → 1.4 GB).
 
 *Quant ★ ome ᯓ➤ quantitative analysis 🧪 of biological molecules 🧬 or entities 🦠 in an organism 👣*
@@ -18,4 +18,4 @@ We govern data soundly by keeping digital assets free from infrastructure bloat,
 
 **Web:** [sas-quantome.com](https://www.sas-quantome.com) · **Contact:** [connections@sas-quantome.com](mailto:connections@sas-quantome.com)
 
-###### November 10, 2026: main readme v84
+###### November 10, 2026: main readme v86

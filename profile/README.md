@@ -16,4 +16,6 @@ We govern data soundly by keeping digital assets free from infrastructure bloat,
 
 ---
 
-###### November 10, 2026: main readme v83
+**Web:** [sas-quantome.com](https://www.sas-quantome.com) · **Contact:** [connections@sas-quantome.com](mailto:connections@sas-quantome.com)
+
+###### November 10, 2026: main readme v84
